@@ -5,6 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/MRLoader.svg?style=flat)](https://cocoapods.org/pods/MRLoader)
 [![Platform](https://img.shields.io/cocoapods/p/MRLoader.svg?style=flat)](https://cocoapods.org/pods/MRLoader)
 
+
+## How To Use
+1 -> Add UIView()
+2 -> Change your UIView class to MRLoaderView
+3 -> Config your spinning loader in Attributes Inceptor
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -22,7 +28,7 @@ pod 'MRLoader'
 
 ## Author
 
-Masoud Roosta, mohsen.sedaghat@raadco.com.au
+Masoud Roosta, masdevoud@gmail.com, m.sedaghatfard@gmail.com
 
 ## License
 
