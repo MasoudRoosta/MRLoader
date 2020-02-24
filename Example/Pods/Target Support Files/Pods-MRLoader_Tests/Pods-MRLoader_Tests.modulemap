@@ -1,0 +1,6 @@
+framework module Pods_MRLoader_Tests {
+  umbrella header "Pods-MRLoader_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - MRLoader (0.1.0)
+
+DEPENDENCIES:
+  - MRLoader (from `../`)
+
+EXTERNAL SOURCES:
+  MRLoader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MRLoader: 03550c68cb0c2d5b24e52d01aab208a3e8b8b6c4
+
+PODFILE CHECKSUM: ec4d72eede4a3a0b2e2c5b655310a7dc8a5b6d53
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,22 @@
+{
+  "name": "MRLoader",
+  "version": "0.1.0",
+  "summary": "A short description of MRLoader.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/AhmadRaadco/MRLoader",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "AhmadRaadco": "mohsen.sedaghat@raadco.com.au"
+  },
+  "source": {
+    "git": "https://github.com/AhmadRaadco/MRLoader.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MRLoader/Classes/**/*"
+}
