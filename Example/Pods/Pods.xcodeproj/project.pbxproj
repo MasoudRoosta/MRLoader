@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04B02EA22404D3F300656525 /* MRLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C329BA6C3E5730A9D76A4DAE54197E /* MRLoader.swift */; };
 		2563CB01E8245CD2C113D28AED65B7AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		29F03C107BBC6DB512915544DADA25E4 /* Pods-MRLoader_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4259C4C7C7E76E0302086AD720346B /* Pods-MRLoader_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E8C5718D7E27BE8AD2B39D1AF574A23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		6CBC3A02708A66DBBE95BA6A8FCB3A16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		9C046B28ACFD5EDE53B73FB1655F1AB5 /* Pods-MRLoader_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D238BC5B541587C5FF3078E712895BD1 /* Pods-MRLoader_Tests-dummy.m */; };
 		BFDF2AC69061AF4A330387F903A6D09B /* Pods-MRLoader_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D90484F9CDF21BB5283E923336E364 /* Pods-MRLoader_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7ABFD1EB0BF4347D81A6D5A209F290D /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C329BA6C3E5730A9D76A4DAE54197E /* ReplaceMe.swift */; };
+		C7ABFD1EB0BF4347D81A6D5A209F290D /* MRLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C329BA6C3E5730A9D76A4DAE54197E /* MRLoader.swift */; };
 		D281E1E4079FAF3C89ADB4D7DF761886 /* MRLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB73785A0A916BDDAEC59DAE19BC5D1 /* MRLoader-dummy.m */; };
 		F457423EDF37BE027C9E3ED7033ED191 /* Pods-MRLoader_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B240F7F95105663B361274A02CE9070 /* Pods-MRLoader_Example-dummy.m */; };
 		FEE7ABBEF2F94392CF24F1BA492E58DC /* MRLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0022EF9898464AF0B04E8473BE390A /* MRLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		0187F6CFDB429352A705E784FA08BA86 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		02C329BA6C3E5730A9D76A4DAE54197E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MRLoader/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		02C329BA6C3E5730A9D76A4DAE54197E /* MRLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MRLoader.swift; path = MRLoader/Classes/MRLoader.swift; sourceTree = "<group>"; };
 		0509CF9162EB65833FCD528B8FE4C56C /* Pods-MRLoader_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MRLoader_Tests.modulemap"; sourceTree = "<group>"; };
 		06EC38D8DC80F241AF756105CC98D648 /* MRLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRLoader.xcconfig; sourceTree = "<group>"; };
 		07D90484F9CDF21BB5283E923336E364 /* Pods-MRLoader_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRLoader_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -196,7 +197,7 @@
 		E89A5EDEC93EB7F968D1E5DB2DD42011 /* MRLoader */ = {
 			isa = PBXGroup;
 			children = (
-				02C329BA6C3E5730A9D76A4DAE54197E /* ReplaceMe.swift */,
+				02C329BA6C3E5730A9D76A4DAE54197E /* MRLoader.swift */,
 				E4280CF8DDFE9A9A510165A4401732FE /* Pod */,
 				95B3E84C399A0D5566D104713AEA21BA /* Support Files */,
 			);
@@ -316,7 +317,7 @@
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "_Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -374,7 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D281E1E4079FAF3C89ADB4D7DF761886 /* MRLoader-dummy.m in Sources */,
-				C7ABFD1EB0BF4347D81A6D5A209F290D /* ReplaceMe.swift in Sources */,
+				C7ABFD1EB0BF4347D81A6D5A209F290D /* MRLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F457423EDF37BE027C9E3ED7033ED191 /* Pods-MRLoader_Example-dummy.m in Sources */,
+				04B02EA22404D3F300656525 /* MRLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,7 +729,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "_Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,

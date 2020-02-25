@@ -1,6 +1,5 @@
 //
-//  spiner.swift
-//  Zehn
+//  MRLoader.swift
 //
 //  Created by Masoud Roosta on 8/14/19.
 //  Copyright © 2019 Elixeir. All rights reserved.
@@ -10,7 +9,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class MRLoaderView : UIView {
+public class MRLoaderView : UIView {
  
     
     let circleLayer = CAShapeLayer()
@@ -25,32 +24,32 @@ class MRLoaderView : UIView {
         super.init(coder: aDecoder)!
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         setup()
     }
     
-    @IBInspectable var lineWidth: CGFloat = 4 {
+    @IBInspectable public var lineWidth: CGFloat = 4 {
         didSet {
             circleLayer.lineWidth = lineWidth
             innerCircle.lineWidth = lineWidth
             setNeedsLayout()
         }
     }
-    @IBInspectable var animating: Bool = true {
+     public var animating: Bool = true {
         didSet {
-            updateAnimation()
+            setNeedsLayout()
         }
     }
-    @IBInspectable var doubleSpiner: Bool = true {
+    @IBInspectable public var doubleSpiner: Bool = true {
         didSet {
-            updateAnimation()
+            setNeedsLayout()
         }
     }
     
-    @IBInspectable var SameRotation: Bool = true {
+    @IBInspectable public var SameRotation: Bool = true {
         didSet {
-            updateAnimation()
+            setNeedsLayout()
         }
     }
     let mas = (.pi * 2.0)
@@ -71,28 +70,6 @@ class MRLoaderView : UIView {
         return animation
     }()
     
-    func updateAnimation() {
-        if animating {
-            if doubleSpiner {
-                if SameRotation{
-                    circleLayer.add(rotationAnimation, forKey: "rotation")
-                    innerCircle.add(rotationAnimation, forKey: "rotation")
-                }else{
-                    circleLayer.add(rotationAnimation, forKey: "rotation")
-                    innerCircle.add(rotationAnimation2, forKey: "rotation")
-                }
-                
-            }else{
-                circleLayer.add(rotationAnimation, forKey: "rotation")
-            }
-        }
-        else {
-
-            circleLayer.removeAnimation(forKey: "rotation")
-            innerCircle.removeAnimation(forKey: "rotation")
-            
-        }
-    }
     
     let strokeEndAnimation: CAAnimation = {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
@@ -142,15 +119,36 @@ class MRLoaderView : UIView {
         tintColorDidChange()
     }
     
-    override func tintColorDidChange() {
+    override public func tintColorDidChange() {
         super.tintColorDidChange()
         circleLayer.strokeColor = tintColor.cgColor
         innerCircle.strokeColor = tintColor.cgColor
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
-        
+        if animating{
+            if doubleSpiner {
+                if SameRotation{
+                    circleLayer.add(rotationAnimation, forKey: "rotation")
+                    innerCircle.add(rotationAnimation, forKey: "rotation")
+                }else{
+                    circleLayer.add(rotationAnimation, forKey: "rotation")
+                    innerCircle.add(rotationAnimation2, forKey: "rotation")
+                }
+                
+            }else{
+                circleLayer.add(rotationAnimation, forKey: "rotation")
+                innerCircle.isHidden = true
+            }
+        }
+        else {
+
+            circleLayer.removeAnimation(forKey: "rotation")
+            innerCircle.removeAnimation(forKey: "rotation")
+            
+        }
+
         let center = CGPoint(x: bounds.midX, y: bounds.midY)
         let radius = min(bounds.width, bounds.height) / 2 - circleLayer.lineWidth/2
         let innerRadius = min(bounds.width, bounds.height) / 4 - innerCircle.lineWidth/4
@@ -167,10 +165,11 @@ class MRLoaderView : UIView {
         innerCircle.path = innerPath.cgPath
     }
     
-    override func prepareForInterfaceBuilder() {
+    override public func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         setup()
     }
     
 
 }
+

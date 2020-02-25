@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04C7944523FFBB2A00ADDD1C /* MRLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7944423FFBB2A00ADDD1C /* MRLoader.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,7 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04C7944423FFBB2A00ADDD1C /* MRLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRLoader.swift; sourceTree = "<group>"; };
 		1FF154B57EDDE64E1167C3EF /* Pods-MRLoader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRLoader_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MRLoader_Tests/Pods-MRLoader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		442D89133DEEF2DE768EF09D /* MRLoader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MRLoader.podspec; path = ../MRLoader.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		49FB4F16F3B6CE2EE5B8463F /* Pods_MRLoader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRLoader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +104,6 @@
 		607FACD21AFB9204008FA782 /* Example for MRLoader */ = {
 			isa = PBXGroup;
 			children = (
-				04C7944423FFBB2A00ADDD1C /* MRLoader.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -335,7 +332,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				04C7944523FFBB2A00ADDD1C /* MRLoader.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

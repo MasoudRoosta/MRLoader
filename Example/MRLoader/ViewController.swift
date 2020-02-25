@@ -7,30 +7,36 @@
 //
 
 import UIKit
+import MRLoader
 
 class ViewController: UIViewController {
-    let mrLoader : MRLoaderView = {
-        let view = MRLoaderView()
-        view.animating = true
-        view.SameRotation = false
-        view.doubleSpiner = false
-        view.backgroundColor = .clear
-        view.tintColor = .red
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-        
+    
+    
+    @IBOutlet weak var first: MRLoaderView!
+    @IBOutlet weak var second: MRLoaderView!
+    @IBOutlet weak var third: MRLoaderView!
+            
     override func viewDidLoad() {
         super.viewDidLoad()
-//        uncomment above code to add loader programmatically
-//        view.addSubview(mrLoader)
-//        NSLayoutConstraint.activate([
-//            mrLoader.widthAnchor.constraint(equalToConstant: 100),
-//            mrLoader.heightAnchor.constraint(equalToConstant: 100),
-//            mrLoader.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
-//            mrLoader.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-//
-//        ])
+        first.animating = true
+        first.SameRotation = false
+        first.doubleSpiner = false
+        first.lineWidth = 16
+        first.tintColor = .red
+
+        second.animating = true
+        second.doubleSpiner = true
+        second.SameRotation = false
+        second.lineWidth = 8
+        second.tintColor = .black
+
+
+        third.animating = true
+        third.doubleSpiner = true
+        third.SameRotation = true
+        third.lineWidth = 4
+        third.tintColor = .green
+
 
         
     }

@@ -22,43 +22,29 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Nxr-0Q-MkR">
                                 <rect key="frame" x="0.0" y="146" width="375" height="375"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35i-UF-791" customClass="MRLoaderView" customModule="MRLoader_Example" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35i-UF-791" customClass="MRLoaderView" customModule="MRLoader">
                                         <rect key="frame" x="130.5" y="0.0" width="114" height="114.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="tintColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="35i-UF-791" secondAttribute="height" id="lCk-4x-Xff"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animating" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="doubleSpiner" value="NO"/>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bI3-rp-2FF" customClass="MRLoaderView" customModule="MRLoader_Example" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bI3-rp-2FF" customClass="MRLoaderView" customModule="MRLoader">
                                         <rect key="frame" x="130.5" y="130.5" width="114" height="114"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="bI3-rp-2FF" secondAttribute="height" id="47t-XR-Imz"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animating" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="doubleSpiner" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="SameRotation" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="skT-2O-dd9" customClass="MRLoaderView" customModule="MRLoader_Example" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="skT-2O-dd9" customClass="MRLoaderView" customModule="MRLoader">
                                         <rect key="frame" x="130.5" y="260.5" width="114" height="114.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="tintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="skT-2O-dd9" secondAttribute="height" id="D2u-K5-cMj"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animating" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="doubleSpiner" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="SameRotation" value="NO"/>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -73,6 +59,11 @@
                             <constraint firstItem="Nxr-0Q-MkR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="jh7-XF-pKD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="first" destination="35i-UF-791" id="OnZ-E0-Vf1"/>
+                        <outlet property="second" destination="bI3-rp-2FF" id="l7M-Z2-Lt1"/>
+                        <outlet property="third" destination="skT-2O-dd9" id="IUp-bD-ayF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
