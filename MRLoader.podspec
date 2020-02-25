@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MRLoader'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.swift_version    = '5.0'
   s.summary          = 'Light weight and simple in Swift spinning loader'
   s.description      = 'Light weight and simple Laoder in Swift that make spinning loader on your iOS applications'
